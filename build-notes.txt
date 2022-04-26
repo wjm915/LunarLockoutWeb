@@ -1,0 +1,6 @@
+How to build a react typescript default environment
+link: https://builtin.com/software-engineering-perspectives/create-react-app-typescript
+(base) ~/Code/reactCode/react-tsc-proj1$ npx create-react-app . --template typescript
+
+YouTube: https://www.youtube.com/watch?v=Z5iWr6Srsj8
+Best practices: https://www.sitepoint.com/react-with-typescript-best-practices/#:~:text=Yes%2C%20TypeScript%20can%20work%20with%20React%20and%20webpack.,two%20work%20together.%20Now%2C%20on%20to%20best%20practices%21

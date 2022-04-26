@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { RobotBar } from './RobotBar';
+import { myData } from './DataSingleton';
+import { GameBoard } from './GameBoard';
+import { ControlBar } from './ControlBar';
 
-function App() {
+export default function App() {
+  let sData = myData.getInstance();
+  console.log(sData.robots.toString())
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <RobotBar />
+        <GameBoard />
+        <ControlBar />
       </header>
     </div>
   );
 }
-
-export default App;
