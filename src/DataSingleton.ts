@@ -213,7 +213,7 @@ export const myData = (function () {
             onClickCB: () => {
                 let moves = solvePuzzle.getInstance().solver(buildLabelMap())
                 
-                if (moves.length == 0) {
+                if (moves == null || moves.length == 0) {
                     alert("No solution found.")
                     resetGameBoard()
                 } else {
